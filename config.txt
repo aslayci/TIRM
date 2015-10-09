@@ -1,0 +1,42 @@
+#### Sample configuration file for TIRM #### 
+# all input files should be tab or space separated
+
+# input directed graph file with TIC parameters for each arc
+# format: node_u node_v p^1_{uv} ... p^z_{uv}
+# node ids should be mapped to 0 to n-1 where n is the total number of nodes in the graph
+probGraphFile : inputs/Flixster_TIC_Graph.txt
+
+# number of nodes 
+n : 28843
+
+# number of edges
+m : 272786
+
+# number of topics
+nrTopics : 10
+
+# number of companies
+nrCompanies : 10
+
+# input advertisers' item distributions file (\gamma^1_i ... \gamma^z_i)
+itemDistsFile : inputs/Flixster_Items.txt
+
+# advertisers' budgets & cpc file (B_i cpc_i)
+budgetsFile : inputs/Flixster_Budgets.txt
+
+# ctrs file - NA opsiyonu ctr = 1 icin
+nodeCTRfile : inputs/Flixster_CTRs.txt
+
+# user attention constraint ###
+attentionConstraint : 1
+
+# output folder
+outputFolder : results
+
+# epsilon for RR set creation
+epsilon : 0.1
+
+# lambda for new regret
+lambda : 0
+
+
